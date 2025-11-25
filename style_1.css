@@ -1,0 +1,108 @@
+body {
+      background: #f3f4f7;
+    }
+    .auth-box {
+      max-width: 520px;
+      margin: 60px auto;
+      padding: 36px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .auth-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+      color: #0a2540;
+      font-size: 26px;
+    }
+    .auth-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    .auth-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .auth-btn {
+      width: 100%;
+      padding: 12px;
+      background: #2e7d32;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .auth-btn:hover {
+      background: #256026;
+    }
+    .switch-link {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+    .switch-link a {
+      color: #0077b6;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .switch-link a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 13px;
+      color: #666;
+      margin-top: 8px;
+    }
+    .terms-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 14px 0;
+  user-select: none;
+}
+
+.terms-box input[type="checkbox"] {
+  display: none;
+}
+
+.terms-box .checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0077ff;   
+  background: #fff;            
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.terms-box input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid #0077ff;      
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.terms-box .text a {
+  color: #0077b6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.terms-box .text a:hover {
+  text-decoration: underline;
+}
